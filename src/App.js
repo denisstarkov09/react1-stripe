@@ -45,6 +45,7 @@ function App(props) {
     const slug = `${config.store_slug}_products`;
     const items = JSON.parse(localStorage.getItem(slug));
     setQuantity(items ? items.length : 0);
+    console.log('test')
   }, []);
 
   return (
